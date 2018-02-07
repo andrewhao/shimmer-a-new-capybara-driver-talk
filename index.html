@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Shimmer - A Chrome Driver that Ain't ChromeDriver</title>
+  <meta charset="utf-8">
+  <style>
+    @import url(https://fonts.googleapis.com/css?family=Lato:900i);
+    @import url(https://fonts.googleapis.com/css?family=Nunito:900i);
+    @import url(https://fonts.googleapis.com/css?family=Nunito+Sans:400,400i,600,600i,900,900i);
+    @import url(https://fonts.googleapis.com/css?family=Fira+Mono:400,700);
+    @import url(styles/css/slide_styles.css);
+  </style>
+</head>
+
+<body>
+  <script src="js/remark.min.js">
+  </script>
+  <script>
+    var slideshow = remark.create({
+      ratio: '16:9',
+      navigation: {
+        scroll: false,
+      },
+      countIncrementalSlides: false,
+      sourceUrl: 'slides.md',
+      highlightStyle: 'atelier-lakeside-light'
+    });
+
+    // Install a book "turn" animation to grab viewer's attention.
+    slideshow.on('showSlide', function (slide) {
+      if (slide.properties.name === "ddd_book_intro") {
+        var bookEl = document.querySelector('.book');
+
+        if (window.bookAnimationHandle) {
+          return;
+        }
+
+        window.bookAnimationHandle = setInterval(function () {
+          if (bookEl.className.indexOf("bookIntro") > 0) {
+            bookEl.className = "book";
+          } else {
+            bookEl.className = "book bookIntro";
+          }
+        }, 3000)
+      }
+    });
+  </script>
+</body>
+
+</html>

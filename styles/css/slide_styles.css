@@ -1,0 +1,154 @@
+.bookWrap {
+  margin: 25px auto;
+  height: 516px;
+  width: 390px;
+  position: relative;
+  -webkit-perspective: 1200px;
+  -moz-perspective: 1200px;
+  perspective: 1200px; }
+
+.book {
+  background: #1fbad9;
+  height: 516px;
+  width: 390px;
+  position: absolute;
+  left: 16px;
+  top: 0;
+  transform-style: preserve-3d;
+  transition: transform 0.5s ease 0s;
+  border-radius: 0 7px 7px 0;
+  perspective: 1200px; }
+
+.bookIntro {
+  transform: rotateY(30deg); }
+
+.cover {
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 390px;
+  max-width: 390px;
+  max-height: 516px;
+  backface-visibility: hidden;
+  border-radius: 0 4px 4px 0;
+  transition: transform 0.5s ease 0s, width 0.5s ease 0s;
+  transform-origin: 0; }
+
+.cover:hover {
+  width: 210px;
+  transform: rotateY(-20deg); }
+
+.spine {
+  background: #1fbad9;
+  width: 40px;
+  height: 514px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  transform: rotateY(90deg);
+  transform-origin: 0; }
+
+body {
+  font-family: "Nunito Sans", sans-serif;
+  text-rendering: optimizeLegibility;
+  zoom: 150%;
+  font-size: 16px; }
+
+h1,
+h2,
+h3 {
+  font-family: "Lato", "Nunito Sans", sans-serif;
+  font-weight: 900;
+  line-height: 1em; }
+
+h4 {
+  color: #4392f1;
+  /*border-bottom: 1px solid #6E6362;*/
+  /*font-style: italic;*/ }
+
+.remark-code,
+.remark-inline-code {
+  font-family: "Fira Mono", "Fira Code", "Ubuntu Mono";
+  font-size: 1em;
+  line-height: 1.2em; }
+
+.remark-code {
+  margin: 0 -1em; }
+
+.remark-slide-content {
+  font-size: 2em;
+  line-height: 1.428em;
+  background-size: cover !important;
+  padding: 1em 2em;
+  background-color: #dee7ed;
+  color: #23185e; }
+  .remark-slide-content.background-color-code {
+    background-color: #ebf8ff; }
+  .remark-slide-content.background-color-carbonfive {
+    background-color: #404040; }
+  .remark-slide-content p {
+    font-size: 1.15em; }
+  .remark-slide-content h1 {
+    color: #dc493a;
+    font-size: 3.5em;
+    line-height: 1em;
+    margin: 0; }
+  .remark-slide-content h2 {
+    color: #4b00b5;
+    font-size: 2em; }
+  .remark-slide-content h3 {
+    color: #4b00b5;
+    font-size: 1.6em; }
+
+a,
+a:link,
+a:visited,
+a:active {
+  color: #084887; }
+
+.remark-slide-number {
+  /* Don't show slide numbers */
+  font-family: "Fira Mono", "Fira Code", "Ubuntu Mono", monospace;
+  font-size: 0.5em; }
+
+.hide-slide-number .remark-slide-number {
+  display: none; }
+
+.background-image-contain {
+  background-size: contain !important; }
+
+.small-code .remark-code {
+  font-size: 0.8em; }
+
+.xsmall-code .remark-code {
+  font-size: 0.7em; }
+
+.background-white {
+  background-color: white; }
+
+.white-text {
+  color: white; }
+
+table {
+  border: 1px solid gray;
+  border-collapse: collapse; }
+
+th,
+td {
+  text-align: left;
+  border: 1px solid gray;
+  padding: 0.3em 0.5em; }
+
+@page {
+  size: 1440px 810px;
+  margin: 0; }
+@media print {
+  .remark-slide-scaler {
+    width: 100% !important;
+    height: 100% !important;
+    transform: scale(1) !important;
+    top: 0 !important;
+    left: 0 !important; } }
+
+/*# sourceMappingURL=slide_styles.css.map */
