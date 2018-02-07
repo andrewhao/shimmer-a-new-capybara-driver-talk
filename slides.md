@@ -69,23 +69,35 @@ Asynchronous.
 
 class: middle center
 
-# Step 1: Research
+# Research
 
 How does Capybara/Selenium/ChromeDriver work?
 
 ---
 
-class: middle center
+class: middle 
 
-Just kidding, I should have researched first.
+## ChromeDriver is an adapter between two protocols
+
+```
++-----------+   +--------------------------+   +----------+
+| Capybara  |   | WebDriver       DevTools |   | Chrome   |
+| WebDriver |---| API             API      |---| Browser  |
++-----------+   +--------------------------+   +----------+
+                        ChromeDriver
+```
+
+???
+
+Capybara-Selenium hits the ChromeDriver server, which turns around and talks to Chrome which is listening on a socket.
 
 ---
 
 class: middle center
 
-# Step 1: Jump Right In
+# Build it!
 
-Build a Proof of Concept Driver
+a proof of concept driver
 
 ---
 
