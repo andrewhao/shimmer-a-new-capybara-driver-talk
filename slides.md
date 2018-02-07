@@ -475,20 +475,23 @@ Shimmer runs 32% **faster** than headless chrome!*
 
 ---
 
-class: middle center
-
-## Warning! Rapidly-evolving API
-
-Things break when new Chrome releases
-
----
+class: middle
 
 ### So... is Shimmer actually faster?
 
-Tentatively - it seems so!
+--
 
 - It seems to run ~2x faster than Headless Chrome
 - It runs in the same ballpark as Poltergeist
+
+```
+Comparison:
+         poltergeist:        3.2 i/s
+    headless_shimmer:        2.5 i/s - same-ish: difference falls within error
+             shimmer:        1.6 i/s - 2.03x  slower
+     headless_chrome:        0.8 i/s - 4.16x  slower
+              chrome:        0.6 i/s - 4.97x  slower
+```
 
 ---
 
@@ -506,7 +509,27 @@ Shimmer still can't do some things like:
 
 class: middle center
 
-#### Maybe you can help?
+## Warning! Rapidly-evolving API
+
+Things break when new Chrome releases
+
+---
+
+class: middle
+
+## But maybe it's good enough for you!
+
+Try it out on one of your projects
+
+---
+
+class: middle
+
+#### Maybe you can help!
+
+* Build a feature!
+* Fix a bug!
+* File an issue!
 
 Github: [carbonfive/shimmer](https://www.github.com/carbonfive/shimmer)
 
